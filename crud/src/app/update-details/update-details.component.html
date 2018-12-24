@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Save Data form</h2>
+  <form [formGroup]="firstCrud">
+    <div class="form-group">
+      <label for="email">name:</label>
+      <input type="email" class="form-control" id="email" formControlName="name" placeholder="Enter name" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">position:</label>
+      <input type="text" class="form-control" id="pwd" formControlName="position" placeholder="Enter position" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="email">Office:</label>
+      <input type="email" class="form-control" id="email" formControlName="office" placeholder="Enter office" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Number:</label>
+      <input type="number" class="form-control" id="pwd" formControlName="number" placeholder="Enter number" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="button" class="btn btn-default" (click)="firstDataSave()">Submit</button>
+  </form>
+</div>
